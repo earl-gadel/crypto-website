@@ -1,3 +1,5 @@
 
 .vs/slnx.sqlite
 .vs/config/applicationhost.config
+__pycache__/vigenere.cpython-36.pyc
+__pycache__/helpers.cpython-36.pyc
