@@ -1,5 +1,5 @@
 from flask import Flask, request
-from vigenere import rotate_string
+from vigenere import web_encrypt
 
 app = Flask(__name__)
 app.config['DEBUG'] = True
@@ -44,11 +44,11 @@ def index():
 
 @app.route("/", methods=['POST'])
 def encrypt():
-    rotation = int(request.form['rot'])
+    rotation = request.form['rot']
     text_field = request.form['text']
 
 
-    encrypted = rotate_string(text_field, rotation)
+    encrypted = web_encrypt(text_field, rotation)
     return "<h1>" + form.format(encrypted) + "</h1>"
 
 

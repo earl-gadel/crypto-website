@@ -1,6 +1,6 @@
 from helpers import alphabet_position, rotate_character
 
-def encrypt(text, rot):
+def web_encrypt(text, rot):
     rotated_list = ""
     encrypt_list = ""
     alpha = "abcdefghijklmnopqrstuvwxyz"
@@ -23,7 +23,7 @@ def encrypt(text, rot):
     return final_encrypt
 
 def main():
-    print(encrypt("The crow flies!", "boom"))
+    print(web_encrypt("The crow flies!", "boom"))
 
 if __name__ == "__main__":
     main()
