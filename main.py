@@ -28,8 +28,8 @@ form = """
     <body>
         <form action="/" method="post">
             <label>
-                Rotate by:
-                <input type="text" name="rot" value="0">
+                Encryption key:
+                <input type="text" name="rot" value=''>
             </label>
             <textarea name="text">{0}</textarea>
             <input type="submit" value="Submit Query">
